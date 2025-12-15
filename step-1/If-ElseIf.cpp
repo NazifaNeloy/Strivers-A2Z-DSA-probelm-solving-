@@ -2,25 +2,19 @@
 using namespace std;
 
 int main() {
-    int day;
-    cin >> day;
+    int marks;
+    cin >> marks;
 
-    if (day == 1)
-        cout << "Monday";
-    else if (day == 2)
-        cout << "Tuesday";
-    else if (day == 3)
-        cout << "Wednesday";
-    else if (day == 4)
-        cout << "Thursday";
-    else if (day == 5)
-        cout << "Friday";
-    else if (day == 6)
-        cout << "Saturday";
-    else if (day == 7)
-        cout << "Sunday";
+    if (marks >= 90)
+        cout << "Grade A";
+    else if (marks >= 70)
+        cout << "Grade B";
+    else if (marks >= 50)
+        cout << "Grade C";
+    else if (marks >= 35)
+        cout << "Grade D";
     else
-        cout << "Invalid";
+        cout << "Fail";
 
     return 0;
 }
