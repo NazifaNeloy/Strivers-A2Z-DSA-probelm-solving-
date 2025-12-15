@@ -1,27 +1,26 @@
 #include <iostream>
 using namespace std;
 
-class Solution {
-public:
-    void whichWeekDay(int day) {
-day = int(input())
+int main() {
+    int day;
+    cin >> day;
 
-if day == 1:
-    print("Monday")
-elif day == 2:
-    print("Tuesday")
-elif day == 3:
-    print("Wednesday")
-elif day == 4:
-    print("Thursday")
-elif day == 5:
-    print("Friday")
-elif day == 6:
-    print("Saturday")
-elif day == 7:
-    print("Sunday")
-else:
-    print("Invalid")
+    if (day == 1)
+        cout << "Monday";
+    else if (day == 2)
+        cout << "Tuesday";
+    else if (day == 3)
+        cout << "Wednesday";
+    else if (day == 4)
+        cout << "Thursday";
+    else if (day == 5)
+        cout << "Friday";
+    else if (day == 6)
+        cout << "Saturday";
+    else if (day == 7)
+        cout << "Sunday";
+    else
+        cout << "Invalid";
 
-    }
-};
+    return 0;
+}
