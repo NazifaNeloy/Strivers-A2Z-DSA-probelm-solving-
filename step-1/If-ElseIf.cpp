@@ -1,33 +1,26 @@
 #include <iostream>
 using namespace std;
 
-class Solution {
-public:
-    void studentGrade(int marks) {
-        cout << "Marks = " << marks << endl;
-
-        if (marks >= 90) {
-            cout << "Grade A" << endl;
-        }
-        else if (marks >= 70) {
-            cout << "Grade B" << endl;
-        }
-        else if (marks >= 50) {
-            cout << "Grade C" << endl;
-        }
-        else if (marks >= 35) {
-            cout << "Grade D" << endl;
-        }
-        else {
-            cout << "Fail" << endl;
-        }
-    }
-};
-
 int main() {
-    Solution s;
-    int marks;
-    cin >> marks;
-    s.studentGrade(marks);
+    int day;
+    cin >> day;
+
+    if (day == 1)
+        cout << "Monday";
+    else if (day == 2)
+        cout << "Tuesday";
+    else if (day == 3)
+        cout << "Wednesday";
+    else if (day == 4)
+        cout << "Thursday";
+    else if (day == 5)
+        cout << "Friday";
+    else if (day == 6)
+        cout << "Saturday";
+    else if (day == 7)
+        cout << "Sunday";
+    else
+        cout << "Invalid";
+
     return 0;
 }
